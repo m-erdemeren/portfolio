@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="personal-info">
+                <h3 class="name">Erdem Eren</h3>
+                <span class="title">Game Developer</span>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active">TR</button>
+                <button class="lang-btn">EN</button>
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <ul>
+                <li><a href="#about" data-translate="about">Hakkımda</a></li>
+                <li><a href="#portfolio" data-translate="portfolio">Portfolyo</a></li>
+                <li><a href="#contact" data-translate="contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2 data-translate="about">Hakkımda</h2>
+        <div class="about-content">
+            <p data-translate="aboutContent">Buraya kendiniz hakkında bilgi ekleyebilirsiniz.</p>
+            <div class="skills">
+                <h3 data-translate="skills">Beceriler</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 data-translate="portfolio">Portfolyo</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="proje1.jpg" alt="Proje 1">
+                <h3><span data-translate="project">Proje</span> 1</h3>
+                <p data-translate="projectDesc">Proje açıklaması</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="proje2.jpg" alt="Proje 2">
+                <h3><span data-translate="project">Proje</span> 2</h3>
+                <p data-translate="projectDesc">Proje açıklaması</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 data-translate="contact">İletişim</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name" data-translate="name">İsim:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-translate="email">E-posta:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-translate="message">Mesaj:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" data-translate="send">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="translations.js"></script>
+    <script src="language-switcher.js"></script>
+</body>
+</html>
